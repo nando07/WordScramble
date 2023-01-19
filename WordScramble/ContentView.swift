@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let people = ["Finn", "Leia", "Luke", "Rey"]
+
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List {
+            Text("Static Row")
+
+                ForEach(people, id: \.self) {
+                    Text($0)
+                }
+
+                Text("Static Row")
         }
+        .listStyle(.sidebar)
         .padding()
     }
 }
