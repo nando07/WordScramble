@@ -22,8 +22,8 @@ struct ContentView: View {
 
                 Text("Static Row")
         }
-        .listStyle(.sidebar)
-        .padding()
+     
+    
     }
 }
 
