@@ -22,8 +22,12 @@ struct ContentView: View {
 
                 Text("Static Row")
         }
-     
     
+    }
+    func loadFile() {
+        if let fileURL = Bundle.main.url(forResource: "some-file", withExtension: "txt") {
+            
+        }
     }
 }
 
